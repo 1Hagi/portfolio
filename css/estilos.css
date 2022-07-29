@@ -190,11 +190,6 @@ ul{
 	padding-left: 40px;
 }
 
-.cursos_space :hover {
-	background-color: rgb(236, 236, 234);
-	text-decoration: underline;
-}
-
 .cursos_imagen {
 	width: 200px;
 	border: solid 3px rgb(54, 69, 92);
@@ -217,6 +212,11 @@ hr {
 article > a {
 	text-decoration: none;
 	color: black;
+}
+
+.cursos_link :hover{
+	background-color: rgb(236, 236, 234);
+	text-decoration: underline;
 }
 
 /* Contenido de "Curriculum" */
