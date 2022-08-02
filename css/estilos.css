@@ -145,6 +145,10 @@ section{
 	padding: 40px 0px 0px 40px;
 }
 
+.contenedor_proyecto{
+	width: 50%;
+}
+
 .proyecto {
 	background-color: rgba(54, 69, 92, 1);
 	border-top-left-radius: 4%;
