@@ -186,22 +186,22 @@ ul{
 	background-color: rgb(134, 143, 182);
 }
 
-/* Contenido de "Cursos" */
+/* Contenido de "Formación" */
 
-.cursos_space {
+.formacion_space {
 	position: relative;
 	margin-right: 40px;
 	padding-left: 40px;
 }
 
-.cursos_imagen {
+.formacion_imagen {
 	width: 200px;
 	border: solid 3px rgb(54, 69, 92);
 	margin-right: 20px;
 	float: left;
 }
 
-.cursos_descripcion{
+.formacion_descripcion{
 	width: 100%;
 
 	right: 40px;
@@ -218,7 +218,7 @@ article > a {
 	color: black;
 }
 
-.cursos_link :hover{
+.formacion_link :hover{
 	background-color: rgb(236, 236, 234);
 	text-decoration: underline;
 }
