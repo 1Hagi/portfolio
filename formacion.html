@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title lang="es">La parte de los formacion</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title lang="es">Portafólio</title>
 	<link rel="stylesheet" type="text/css" href="css/terceros/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -12,7 +13,10 @@
 
 	<!--	Título	-->
 
-	<header>Portafólio</header>
+	<header>
+		<p class="boton_perfil" onclick="mostrar_perfil()">☰</p>
+		<p>Portafólio</p>
+	</header>
 
 	<!--	Barra Lateral	-->
 
@@ -25,13 +29,15 @@
 			<figcaption>C<u>abrera, Diego Nicolá</u>s<figcaption>
 		</div>
 
-			<p class="perfil__descripcion">Programador / Desarrollador y sobre todo una persona honesta y trabajadora tratando de salir adelante. Busco codificar soluciones a los problemas a travez de la programación; complete las dos partes del curso ArgentinaPrograma 2021 (FullStack Web Java) desarrollado por el Ministerio de Desarrollo Productivo y actualmente en busca mi primera experiencia laboral como desarrollador / programador.
+			<p class="perfil__descripcion">
+				Me dedico a buscar soluciones rápidas y eficientes a los problemas a travez de la programación; 
+				orientanción Web Full-Stack en Java, actualmente en busca mi primera experiencia laboral como desarrollador / programador.
 			</p>
 			
 			<p class="perfil__contacto">
 				------------------- Contacto -------------------- <br><br>
 				 LinkedIn: --> 
-				 <a class="link_contacto" href="https://www.linkedin.com/in/diego-nicol%C3%A1s-cabrera-001b9a182/" target="_blank">Enlace Aquí</a>
+				 <a class="link_contacto" href="https://www.linkedin.com/in/diego-n-cabrera/" target="_blank">Enlace Aquí</a>
 				 <br>
 				 Github: --> 
 				 <a class="link_contacto" href="https://github.com/1Hagi" target="_blank">Enlace Aquí</a>
@@ -46,11 +52,13 @@
 	<!--	Barrar de Navegación	-->
 
 	<ul class="nav">
+		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
 		<li class="nav_content"><a class="nav_item" href="index.html">Proyectos</a></li>
-		<p style="display: inline;">|</p>
-		<li class="nav_content"><a class="nav_item" href="formacion.html">Formación</a></li>
-		<p style="display: inline;">|</p>
+		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
+		<li class="nav_content"><a class="nav_item active" href="formacion.html">Formación</a></li>
+		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
 		<li class="nav_content"><a class="nav_item" href="curriculum.html">Curriculum</a></li>
+		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
 	</ul>
 
 	<!--	Sección de formación	-->
@@ -61,7 +69,7 @@
 			<a class="formacion_link" href="https://www.linkedin.com/company/inkua/mycompany/verification/">
 				<img class="formacion_imagen" src="img/inkua.png">
 				<br/>
-				<h3>Trabajo en InkuA (01-10-22 - Actual)</h3>
+				<h3>Trabajo en InkuA (2022 - 2023 1 Año)</h3>
 				<br/>
 				<p class="formacion_descripcion">
 					Puesto como Desarrollo Web
@@ -157,5 +165,14 @@
 		</article>
 
 	</section>
+
+	<script>
+		function mostrar_perfil() {
+			var perfil = document.querySelector('.perfil_lateral');
+			if (perfil.style.display === 'block' ? perfil.style.display = 'none' : perfil.style.display = 'block');
+			var contenido = document.querySelector('section');
+			if (contenido.style.display === 'none' ? contenido.style.display = 'block' : contenido.style.display = 'none');
+		}
+	</script>
 </body>
 </html>

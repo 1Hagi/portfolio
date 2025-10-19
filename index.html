@@ -3,11 +3,13 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Un portafólio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portafólio</title>
 	<link rel="stylesheet" type="text/css" href="css/terceros/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<script src="js/newmarquee-min.js"></script>
 </head>
 
 
@@ -15,7 +17,10 @@
 
 	<!--	Título	-->
 
-	<header>Portafólio</header>
+	<header>
+		<p class="boton_perfil" onclick="mostrar_perfil()">☰</p>
+		<p>Portafólio</p>
+	</header>
 
 	<!--	Barra Lateral	-->
 
@@ -28,37 +33,39 @@
 			<figcaption>C<u>abrera, Diego Nicolá</u>s<figcaption>
 		</div>
 
-			<p class="perfil__descripcion">
-				Programador / Desarrollador.
-			</p>
-			<p class="perfil__descripcion">
-				Me dedico a buscar soluciones rápidas y eficientes a los problemas a travez de la programación; 
-				orientanción Web Full-Stack en Java, actualmente en busca mi primera experiencia laboral como desarrollador / programador.
-			</p>
-			
-			<p class="perfil__contacto">
-				------------------- Contacto -------------------- <br><br>
-				 LinkedIn: --> 
-				 <a class="link_contacto" href="https://www.linkedin.com/in/diego-n-cabrera/" target="_blank">Enlace Aquí</a>
-				 <br>
-				 Github: --> 
-				 <a class="link_contacto" href="https://github.com/1Hagi" target="_blank">Enlace Aquí</a>
-				 <br>
-				 Facebook: --> 
-				 <a class="link_contacto" href="https://www.facebook.com/diegonicolas.cabrera.5/" target="_blank">Enlace Aquí</a>
-				 <br>
-			</p>
+		<p class="perfil__descripcion">
+			Programador / Desarrollador.
+		</p>
+		<p class="perfil__descripcion">
+			Me dedico a buscar soluciones rápidas y eficientes a los problemas a travez de la programación; 
+			orientanción Web Full-Stack en Java, actualmente en busca mi primera experiencia laboral como desarrollador / programador.
+		</p>
+		
+		<p class="perfil__contacto">
+			------------------- Contacto -------------------- <br><br>
+				LinkedIn: --> 
+				<a class="link_contacto" href="https://www.linkedin.com/in/diego-n-cabrera/" target="_blank">Enlace Aquí</a>
+				<br>
+				Github: --> 
+				<a class="link_contacto" href="https://github.com/1Hagi" target="_blank">Enlace Aquí</a>
+				<br>
+				Facebook: --> 
+				<a class="link_contacto" href="https://www.facebook.com/diegonicolas.cabrera.5/" target="_blank">Enlace Aquí</a>
+				<br>
+		</p>
 
 	</aside>
 
 	<!--	Barrar de Navegación	-->
 
 	<ul class="nav">
-		<li class="nav_content"><a class="nav_item" href="index.html">Proyectos</a></li>
-		<p style="display: inline;">|</p>
+		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
+		<li class="nav_content"><a class="nav_item active" href="index.html">Proyectos</a></li>
+		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
 		<li class="nav_content"><a class="nav_item" href="formacion.html">Formación</a></li>
-		<p style="display: inline;">|</p>
+		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
 		<li class="nav_content"><a class="nav_item" href="curriculum.html">Curriculum</a></li>
+		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
 	</ul>
 
 	<!--	Sección de Proyectos	-->
@@ -71,7 +78,10 @@
 
 				<td class="contenedor_proyecto">
 					<article class="proyecto">
-						<a href="http://www.caballosenlibertad.org/" target="_blank"><img class="proyecto_imagen" src="./img/caballos-en-libertad.png" alt=""></a>
+						<a href="http://www.caballosenlibertad.org/" target="_blank">
+							<p class="proyecto_titulo">Caballos en Libertad</p>
+							<img class="proyecto_imagen" src="./img/projects/caballos-en-libertad.png" alt="">
+						</a>
 
 						<p class="proyecto_descripcion">Proyecto real desarrollo web creado para la ONG sin fines de lucro que rescata caballos y los provee de alimentos y medicamentos.</p>
 
@@ -80,28 +90,32 @@
 							<li class="tag">CSS3</li>
 							<li class="tag">JavaScript</li>
 							<li class="tag">Bootstrap</li>
-
 						</ul>
+
 					</article>
 				</td>
 
 				<td class="contenedor_proyecto">
 					<article class="proyecto">
-						<a href="https://github.com/1Hagi/TurismoSimpson-WebApp" target="_blank"><img class="proyecto_imagen" src="img/turismo_simpson.jpg" alt=""></a>
+						<a href="https://github.com/1Hagi/TurismoSimpson-WebApp" target="_blank">
+							<p class="proyecto_titulo">Turismo Simpson WebApp</p>
+							<img class="proyecto_imagen" src="img/projects/turismo_simpson.jpg" alt="">
+						</a>
 
 						<p class="proyecto_descripcion">Creando un proyecto final web FullStack e-commerce con JAVA  donde se venden tickets de excursiónes en temática fantasía de la serie "Los Simpson"</p>
 
-						<ul class="tags">
-							<li class="tag">HTML</li>
-							<li class="tag">CSS</li>
-							<li class="tag">JSP</li>
-							<li class="tag">JSTL</li>
-							<li class="tag">SQLITE</li>
-							<li class="tag">Servlets</li>
-							<li class="tag">Bootstrap</li>
-							<li class="tag">Arquitectura MVC+S</li>
-
-						</ul>
+						<new-marquee speed="25" direction="left" pauseonhover="true">
+							<ul class="tags">
+								<li class="tag">HTML</li>
+								<li class="tag">CSS</li>
+								<li class="tag">JSP</li>
+								<li class="tag">JSTL</li>
+								<li class="tag">SQLITE</li>
+								<li class="tag">Servlets</li>
+								<li class="tag">Bootstrap</li>
+								<li class="tag">Arquitectura MVC+S</li>
+							</ul>
+						</new-marquee>
 					</article>
 				</td>
 				
@@ -111,28 +125,36 @@
 
 				<td class="contenedor_proyecto">
 					<article class="proyecto">
-						<a href="https://github.com/1Hagi/TurismoTM-WebApp" target="_blank"><img class="proyecto_imagen" src="img/turismo_tm.png" alt=""></a>
+
+						<a href="https://github.com/1Hagi/TurismoTM-WebApp" target="_blank">
+							<p class="proyecto_titulo">Turismo - Tierra Media</p>
+							<img class="proyecto_imagen" src="img/projects/turismo_tm.png" alt="">
+						</a>
 
 						<p class="proyecto_descripcion">Proyecto final curso AP, web-app FullStack con JAVA  donde se venden tickets de excursiónes en temática fantasía de la serie "Lord of Rings"</p>
 
-						<ul class="tags">
-							<li class="tag">HTML</li>
-							<li class="tag">CSS</li>
-							<li class="tag">JSP</li>
-							<li class="tag">JSTL</li>
-							<li class="tag">SQLITE</li>
-							<li class="tag">Servlets</li>
-							<li class="tag">Filtros</li>
-							<li class="tag">JDBC</li>
-							<li class="tag">MVC+S</li>
-
-						</ul>
+						<new-marquee speed="25" direction="left" pauseonhover="true">
+							<ul class="tags">
+								<li class="tag">HTML</li>
+								<li class="tag">CSS</li>
+								<li class="tag">JSP</li>
+								<li class="tag">JSTL</li>
+								<li class="tag">SQLITE</li>
+								<li class="tag">Servlets</li>
+								<li class="tag">Filtros</li>
+								<li class="tag">JDBC</li>
+								<li class="tag">MVC+S</li>
+							</ul>
+						</new-marquee>
 					</article>
 				</td>
 
 				<td class="contenedor_proyecto">
 					<article class="proyecto">
-						<a href="https://github.com/1Hagi/TSimpson-SQLite" target="_blank"><img class="proyecto_imagen" src="img/TSimpson_DB2.png" alt=""></a>
+						<a href="https://github.com/1Hagi/TSimpson-SQLite" target="_blank">
+							<p class="proyecto_titulo">TSimpson - SQLite</p>
+							<img class="proyecto_imagen" src="img/projects/TSimpson_DB2.png" alt="">
+						</a>
 
 						<p class="proyecto_descripcion">Proyecto Java base de datos SQLite, metodología específica, concepto de encapsulamiento y manejo de datos de manera automática.</p>
 
@@ -152,7 +174,10 @@
 
 				<td class="contenedor_proyecto">
 					<article class="proyecto">
-						<a href="https://github.com/1Hagi/TSimpson-JAVA" target="_blank"><img class="proyecto_imagen" src="img/TSimpson.png" alt="img-proyecto"></a>
+						<a href="https://github.com/1Hagi/TSimpson-JAVA" target="_blank">
+							<p class="proyecto_titulo">TSimpson - JAVA</p>
+							<img class="proyecto_imagen" src="img/projects/TSimpson.png" alt="img-proyecto">
+						</a>
 
 						<p class="proyecto_descripcion">Proyecto realizado en AP, un programa de compras que recomienda automaticamente pack de excursiones según el cliente, con temática Simpson.</p>
 
@@ -165,7 +190,10 @@
 
 				<td class="contenedor_proyecto">
 					<article class="proyecto">
-						<a href="https://github.com/1Hagi/programas-en-c" target="_blank"><img class="proyecto_imagen" src="img/c++.jpg" alt=""></a>
+						<a href="https://github.com/1Hagi/programas-en-c" target="_blank">
+							<p class="proyecto_titulo">Programas en C++</p>
+							<img class="proyecto_imagen" src="img/projects/c++.jpg" alt="">
+						</a>
 
 						<p class="proyecto_descripcion">Programas realizados la carrera de Lic. en Sistemas de Info. para afianzar conocimientos básicos y avanzados adquiridos en la cursada.</p>
 
@@ -180,6 +208,15 @@
 		</table>
 
 	</section>
+
+	<script>
+		function mostrar_perfil() {
+			var perfil = document.querySelector('.perfil_lateral');
+			if (perfil.style.display === 'block' ? perfil.style.display = 'none' : perfil.style.display = 'block');
+			var contenido = document.querySelector('section');
+			if (contenido.style.display === 'none' ? contenido.style.display = 'block' : contenido.style.display = 'none');
+		}
+	</script>
 
 </body>
 
