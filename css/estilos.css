@@ -102,11 +102,18 @@ figcaption {
 	border-top: dashed 2px rgb(82, 100, 146);
 }
 
-.link_contacto:link, .link_contacto:visited {
-	color: rgb(236, 234, 234);
+.link_redes {
+	padding: 3px;
+	box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
-.link_contacto:hover {
+.link_redes:link, .link_redes:visited {
+	color: rgb(236, 234, 234);
+	border: solid 1px rgb(143, 143, 143);
+	text-decoration: none;
+}
+
+.link_redes:hover {
 	background-color: rgb(236, 236, 234);
 	color: rgb(82, 100, 146);
 }
