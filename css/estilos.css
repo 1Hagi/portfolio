@@ -7,7 +7,7 @@
 }
 
 body{
-	background-color: lightgreen;
+	background-color: rgba(212, 212, 212, 1);
 }
 
 header{
@@ -124,7 +124,7 @@ header, section {
 .nav {
 	display: inline-block;
 	padding: 5px;
-	background-color: rgb(134, 143, 182);
+	background: linear-gradient( rgb(134, 143, 182) 15%, rgba(134, 143, 182, 0.0));
 	position:relative;
 	left: 20%;
 	width: 80%;
@@ -147,14 +147,17 @@ header, section {
 	font-size: 20px;
 	font-weight: bold;
 	line-height: 10px;
-	color: rgb(0, 0, 0);
+	color: white;
 	border-radius: 10px;
-	border: solid 1px darkgray;
+	border: solid 1px rgb(233, 233, 233);
 	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+	text-shadow: 1px 1px 1px rgba(8, 8, 8, 0.8);
 }
 
 .nav_item.active {
 	border: solid 1px aquamarine;
+	color: aquamarine;
+	text-shadow: 1px 1px 1px rgba(15, 15, 15, 0.8);
 }
 
 .nav_content:hover {
@@ -162,7 +165,7 @@ header, section {
 }
 
 .nav_item:hover {
-	color: white;
+	color: aquamarine;
 	background-color: rgb(82, 100, 146);
 }
 
@@ -171,6 +174,10 @@ header, section {
 section{
 	background-color: rgba(212, 212, 212, 1);
 	padding: 40px 0px 0px 40px;
+}
+
+.cv_section{	
+	padding-right: 40px;
 }
 
 .contenedor_proyecto{
@@ -201,6 +208,9 @@ section{
 	transform: translateX(-50%);
 	border: solid 1px rgba(54, 69, 92, 1);
 	box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+	font-weight: bold;
+	text-shadow: 1px 1px 3px black;
+	font-family: 'Work Sans', sans-serif;
 }
 
 .proyecto_imagen {
@@ -217,7 +227,7 @@ section{
 	padding: 10px;
 	width: 100%;
 	height: 78px;
-	color:rgb(22, 22, 22);
+	color:white;
 	text-align: justify;
 	background-color: rgb(82, 100, 146);
 }
@@ -313,13 +323,24 @@ article > a {
 @media (max-width: 600px) {
 
 .perfil_lateral {
+	display: none;
 	width: 100%;
+	padding: 0;
 }
 
 header, .nav, section {
 	position: relative;
 	left: 0;
 	width: 100%;
+}
+
+section {
+	padding: 0;
+	height: 100vh;
+}
+
+.cv_section{	
+	padding-right: 20px;
 }
 
 .boton_perfil {
@@ -343,6 +364,11 @@ header, .nav, section {
 	line-height: 10px;
 }
 
+.formacion_space {
+	margin-right: 0;
+	padding-left: 0;
+}
+
 .sec_proyectos {
 	padding-top: 30px;
 	padding-bottom: 0;
@@ -355,18 +381,58 @@ section {
 .contenedor_proyecto {
 	display: block;
 	width: 100%;
-	padding: 0px 20px 30px 0px;
+	padding: 0px 0px 30px 0px;
 }
 
 td {
 	padding: 0px 0px 30px 0px;
 }
 
+.formacion_imagen {
+	width: 40%;
+	object-fit: cover;
+	margin-right: 10px;
+}
+
+.formacion_descripcion {
+	width: 100%;
+	right: 0;
+	padding-right: 0;
+	text-align: justify;
+}
+
+hr {
+	clear: both;
+	margin-right: 0;
+}
+
+h3 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 }
 
 /* Media Query dispositivos tablets */
 
-@media (max-width: 1200px) {
+@media (min-width: 601px) and (max-width: 1200px) {
+
+.boton_perfil {
+	display: block;
+}
+
+.perfil_lateral {
+	display: none;
+	width: 100%;
+	text-align: center;
+	padding: 0 20%;
+}
+
+.perfil__contacto {
+	width: 60%;
+	text-align: center
+}
 
 .perfil_lateral {
 	display: none;
@@ -386,6 +452,10 @@ header, .nav, section {
 
 section {
 	padding: 20px;
+}
+
+.cv_section {	
+	padding-right: 20px;
 }
 
 td {
