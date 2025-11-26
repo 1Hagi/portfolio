@@ -19,8 +19,13 @@
 	<!--	Título	-->
 
 	<header>
+		<div id="bg-stars">
+            <div id='stars'></div>
+            <div id='stars2'></div>
+            <div id='stars3'></div>
+        </div>
 		<p class="boton_perfil" onclick="mostrar_perfil()">☰</p>
-		<p>Portafólio</p>
+		<p class="titulo">Portafólio</p>
 	</header>
 
 	<!--	Barra Lateral	-->
@@ -70,200 +75,203 @@
 
 	</aside>
 
-	<!--	Barrar de Navegación	-->
+	<div class="bg-proyectos">
 
-	<ul class="nav">
-		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
-		<li class="nav_content"><a class="nav_item active" href="index.html">Proyectos</a></li>
-		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
-		<li class="nav_content"><a class="nav_item" href="formacion.html">Formación</a></li>
-		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
-		<li class="nav_content"><a class="nav_item" href="curriculum.html">Curriculum</a></li>
-		<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
-	</ul>
+		<!--	Barrar de Navegación	-->
 
-	<!--	Sección de Proyectos	-->
+		<ul class="nav">
+			<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
+			<li class="nav_content"><a class="nav_item btn-style510 active" href="index.html">Proyectos</a></li>
+			<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
+			<li class="nav_content"><a class="nav_item btn-style510" href="formacion.html">Formación</a></li>
+			<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
+			<li class="nav_content"><a class="nav_item btn-style510" href="curriculum.html">Curriculum</a></li>
+			<p style="display: inline; color: aquamarine; text-shadow: 0 0 5px aquamarine;">●</p>
+		</ul>
 
-	<section class="sec_proyectos">
+		<!--	Sección de Proyectos	-->
 
-		<table>
+		<section class="sec_proyectos">
 
-			<tr>
+			<table>
 
-				<td class="contenedor_proyecto">
-					<article class="proyecto">
-						<a href="https://1hagi.github.io/correlativas_lsi/" target="_blank">
-							<p class="proyecto_titulo">Correlativas LSI</p>
-							<img class="proyecto_imagen" src="./img/projects/correlativas_lsi.png" alt="">
-						</a>
+				<tr>
 
-						<p class="proyecto_descripcion">Proyecto de gestión de correlativas para la carrera de Licenciatura en Sistemas de la Universidad Nacional del Nordeste.</p>
+					<td class="contenedor_proyecto">
+						<article class="proyecto">
+							<a href="https://1hagi.github.io/correlativas_lsi/" target="_blank">
+								<p class="proyecto_titulo">Correlativas LSI</p>
+								<img class="proyecto_imagen" src="./img/projects/correlativas_lsi.png" alt="">
+							</a>
 
-						<ul class="tags">
-							<li class="tag">HTML5</li>
-							<li class="tag">CSS3</li>
-							<li class="tag">JavaScript</li>
-							<li class="tag">Bootstrap</li>
-						</ul>
+							<p class="proyecto_descripcion">Proyecto de gestión de correlativas para la carrera de Licenciatura en Sistemas de la Universidad Nacional del Nordeste.</p>
 
-					</article>
-				</td>
-
-				<td class="contenedor_proyecto">
-					<article class="proyecto">
-						<a href="https://1hagi.github.io/Human-Front-Aid/" target="_blank">
-							<p class="proyecto_titulo">Human Front Aid</p>
-							<img class="proyecto_imagen" src="img/projects/hfaid.png" alt="">
-						</a>
-
-						<p class="proyecto_descripcion">Como Lider de desarrollo Front End, maquetamos el rediseño de la pagina "Human Front Aid", una <strong>ONG</strong> ubicada en <strong>Ucrania</strong> que ayuda a refugiados y desplazados por la guerra.</p>
-
-						<ul class="tags">
-							<li class="tag">HTML</li>
-							<li class="tag">CSS</li>
-							<li class="tag">JavaScript</li>
-							<li class="tag">JQuery</li>
-							<li class="tag">Bootstrap</li>
-						</ul>
-					</article>
-				</td>
-				
-			</tr>
-
-			<tr>
-
-				<td class="contenedor_proyecto">
-					<article class="proyecto">
-						<a href="http://www.caballosenlibertad.org/" target="_blank">
-							<p class="proyecto_titulo">Caballos en Libertad</p>
-							<img class="proyecto_imagen" src="./img/projects/caballos-en-libertad.png" alt="">
-						</a>
-
-						<p class="proyecto_descripcion">Proyecto real desarrollo web creado para la ONG sin fines de lucro que rescata caballos y los provee de alimentos y medicamentos.</p>
-
-						<ul class="tags">
-							<li class="tag">HTML5</li>
-							<li class="tag">CSS3</li>
-							<li class="tag">JavaScript</li>
-							<li class="tag">Bootstrap</li>
-						</ul>
-
-					</article>
-				</td>
-
-				<td class="contenedor_proyecto">
-					<article class="proyecto">
-						<a href="https://github.com/1Hagi/TurismoSimpson-WebApp" target="_blank">
-							<p class="proyecto_titulo">Turismo Simpson WebApp</p>
-							<img class="proyecto_imagen" src="img/projects/turismo_simpson.jpg" alt="">
-						</a>
-
-						<p class="proyecto_descripcion">Proyecto web FullStack completo sobre un e-commerce, donde se venden  tickets de excursiónes con temática enfocada en la serie "Los Simpson" (basado en Java)</p>
-
-						<new-marquee speed="25" direction="left" pauseonhover="true">
 							<ul class="tags">
-								<li class="tag">HTML</li>
-								<li class="tag">CSS</li>
-								<li class="tag">JSP</li>
-								<li class="tag">JSTL</li>
-								<li class="tag">SQLITE</li>
-								<li class="tag">Servlets</li>
+								<li class="tag">HTML5</li>
+								<li class="tag">CSS3</li>
+								<li class="tag">JavaScript</li>
 								<li class="tag">Bootstrap</li>
-								<li class="tag">Arquitectura MVC+S</li>
 							</ul>
-						</new-marquee>
-					</article>
-				</td>
-				
-			</tr>
 
-			<tr>
+						</article>
+					</td>
 
-				<td class="contenedor_proyecto">
-					<article class="proyecto">
+					<td class="contenedor_proyecto">
+						<article class="proyecto">
+							<a href="https://1hagi.github.io/Human-Front-Aid/" target="_blank">
+								<p class="proyecto_titulo">Human Front Aid</p>
+								<img class="proyecto_imagen" src="img/projects/hfaid.png" alt="">
+							</a>
 
-						<a href="https://github.com/1Hagi/TurismoTM-WebApp" target="_blank">
-							<p class="proyecto_titulo">Turismo - Tierra Media</p>
-							<img class="proyecto_imagen" src="img/projects/turismo_tm.png" alt="">
-						</a>
+							<p class="proyecto_descripcion">Como Lider de desarrollo Front End, maquetamos el rediseño de la pagina "Human Front Aid", una <strong>ONG</strong> ubicada en <strong>Ucrania</strong> que ayuda a refugiados y desplazados por la guerra.</p>
 
-						<p class="proyecto_descripcion">Proyecto final curso AP, web-app FullStack con JAVA  donde se venden tickets de excursiónes en temática fantasía de la serie "Lord of Rings"</p>
-
-						<new-marquee speed="25" direction="left" pauseonhover="true">
 							<ul class="tags">
 								<li class="tag">HTML</li>
 								<li class="tag">CSS</li>
-								<li class="tag">JSP</li>
-								<li class="tag">JSTL</li>
-								<li class="tag">SQLITE</li>
-								<li class="tag">Servlets</li>
-								<li class="tag">Filtros</li>
-								<li class="tag">JDBC</li>
-								<li class="tag">MVC+S</li>
+								<li class="tag">JavaScript</li>
+								<li class="tag">JQuery</li>
+								<li class="tag">Bootstrap</li>
 							</ul>
-						</new-marquee>
-					</article>
-				</td>
+						</article>
+					</td>
+					
+				</tr>
 
-				<td class="contenedor_proyecto">
-					<article class="proyecto">
-						<a href="https://github.com/1Hagi/TSimpson-SQLite" target="_blank">
-							<p class="proyecto_titulo">TSimpson - SQLite</p>
-							<img class="proyecto_imagen" src="img/projects/TSimpson_DB2.png" alt="">
-						</a>
+				<tr>
 
-						<p class="proyecto_descripcion">Proyecto Java base de datos SQLite, metodología específica, concepto de encapsulamiento y manejo de datos de manera automática.</p>
+					<td class="contenedor_proyecto">
+						<article class="proyecto">
+							<a href="http://www.caballosenlibertad.org/" target="_blank">
+								<p class="proyecto_titulo">Caballos en Libertad</p>
+								<img class="proyecto_imagen" src="./img/projects/caballos-en-libertad.png" alt="">
+							</a>
 
-						<ul class="tags">
-							<li class="tag">JAVA</li>
-							<li class="tag">JDBC</li>
-							<li class="tag">PATRÓN DAO</li>
-							<li class="tag">SQLITE</li>
-							<li class="tag">MVC</li>
-						</ul>
-					</article>
-				</td>
+							<p class="proyecto_descripcion">Proyecto real desarrollo web creado para la ONG sin fines de lucro que rescata caballos y los provee de alimentos y medicamentos.</p>
 
-			</tr>
+							<ul class="tags">
+								<li class="tag">HTML5</li>
+								<li class="tag">CSS3</li>
+								<li class="tag">JavaScript</li>
+								<li class="tag">Bootstrap</li>
+							</ul>
 
-			<tr>
+						</article>
+					</td>
 
-				<td class="contenedor_proyecto">
-					<article class="proyecto">
-						<a href="https://github.com/1Hagi/TSimpson-JAVA" target="_blank">
-							<p class="proyecto_titulo">TSimpson - JAVA</p>
-							<img class="proyecto_imagen" src="img/projects/TSimpson.png" alt="img-proyecto">
-						</a>
+					<td class="contenedor_proyecto">
+						<article class="proyecto">
+							<a href="https://github.com/1Hagi/TurismoSimpson-WebApp" target="_blank">
+								<p class="proyecto_titulo">Turismo Simpson WebApp</p>
+								<img class="proyecto_imagen" src="img/projects/turismo_simpson.jpg" alt="">
+							</a>
 
-						<p class="proyecto_descripcion">Proyecto realizado en AP, un programa de compras que recomienda automaticamente pack de excursiones según el cliente, con temática Simpson.</p>
+							<p class="proyecto_descripcion">Proyecto web FullStack completo sobre un e-commerce, donde se venden  tickets de excursiónes con temática enfocada en la serie "Los Simpson" (basado en Java)</p>
 
-						<ul class="tags">
-							<li class="tag">POO</li>
-							<li class="tag">JAVA</li>
-						</ul></a>
-					</article>
-				</td>
+							<new-marquee speed="25" direction="left" pauseonhover="true">
+								<ul class="tags">
+									<li class="tag">HTML</li>
+									<li class="tag">CSS</li>
+									<li class="tag">JSP</li>
+									<li class="tag">JSTL</li>
+									<li class="tag">SQLITE</li>
+									<li class="tag">Servlets</li>
+									<li class="tag">Bootstrap</li>
+									<li class="tag">Arquitectura MVC+S</li>
+								</ul>
+							</new-marquee>
+						</article>
+					</td>
+					
+				</tr>
 
-				<td class="contenedor_proyecto">
-					<article class="proyecto">
-						<a href="https://github.com/1Hagi/programas-en-c" target="_blank">
-							<p class="proyecto_titulo">Programas en C++</p>
-							<img class="proyecto_imagen" src="img/projects/c++.jpg" alt="">
-						</a>
+				<tr>
 
-						<p class="proyecto_descripcion">Programas realizados la carrera de Lic. en Sistemas de Info. para afianzar conocimientos básicos y avanzados adquiridos en la cursada.</p>
+					<td class="contenedor_proyecto">
+						<article class="proyecto">
 
-						<ul class="tags">
-							<li class="tag">C++</li>
-						</ul>
-					</article>
-				</td>
+							<a href="https://github.com/1Hagi/TurismoTM-WebApp" target="_blank">
+								<p class="proyecto_titulo">Turismo - Tierra Media</p>
+								<img class="proyecto_imagen" src="img/projects/turismo_tm.png" alt="">
+							</a>
 
-			</tr>
+							<p class="proyecto_descripcion">Proyecto final curso AP, web-app FullStack con JAVA  donde se venden tickets de excursiónes en temática fantasía de la serie "Lord of Rings"</p>
 
-		</table>
+							<new-marquee speed="25" direction="left" pauseonhover="true">
+								<ul class="tags">
+									<li class="tag">HTML</li>
+									<li class="tag">CSS</li>
+									<li class="tag">JSP</li>
+									<li class="tag">JSTL</li>
+									<li class="tag">SQLITE</li>
+									<li class="tag">Servlets</li>
+									<li class="tag">Filtros</li>
+									<li class="tag">JDBC</li>
+									<li class="tag">MVC+S</li>
+								</ul>
+							</new-marquee>
+						</article>
+					</td>
 
-	</section>
+					<td class="contenedor_proyecto">
+						<article class="proyecto">
+							<a href="https://github.com/1Hagi/TSimpson-SQLite" target="_blank">
+								<p class="proyecto_titulo">TSimpson - SQLite</p>
+								<img class="proyecto_imagen" src="img/projects/TSimpson_DB2.png" alt="">
+							</a>
+
+							<p class="proyecto_descripcion">Proyecto Java base de datos SQLite, metodología específica, concepto de encapsulamiento y manejo de datos de manera automática.</p>
+
+							<ul class="tags">
+								<li class="tag">JAVA</li>
+								<li class="tag">JDBC</li>
+								<li class="tag">PATRÓN DAO</li>
+								<li class="tag">SQLITE</li>
+								<li class="tag">MVC</li>
+							</ul>
+						</article>
+					</td>
+
+				</tr>
+
+				<tr>
+
+					<td class="contenedor_proyecto">
+						<article class="proyecto">
+							<a href="https://github.com/1Hagi/TSimpson-JAVA" target="_blank">
+								<p class="proyecto_titulo">TSimpson - JAVA</p>
+								<img class="proyecto_imagen" src="img/projects/TSimpson.png" alt="img-proyecto">
+							</a>
+
+							<p class="proyecto_descripcion">Proyecto realizado en AP, un programa de compras que recomienda automaticamente pack de excursiones según el cliente, con temática Simpson.</p>
+
+							<ul class="tags">
+								<li class="tag">POO</li>
+								<li class="tag">JAVA</li>
+							</ul></a>
+						</article>
+					</td>
+
+					<td class="contenedor_proyecto">
+						<article class="proyecto">
+							<a href="https://github.com/1Hagi/programas-en-c" target="_blank">
+								<p class="proyecto_titulo">Programas en C++</p>
+								<img class="proyecto_imagen" src="img/projects/c++.jpg" alt="">
+							</a>
+
+							<p class="proyecto_descripcion">Programas realizados la carrera de Lic. en Sistemas de Info. para afianzar conocimientos básicos y avanzados adquiridos en la cursada.</p>
+
+							<ul class="tags">
+								<li class="tag">C++</li>
+							</ul>
+						</article>
+					</td>
+
+				</tr>
+
+			</table>
+
+		</section>
+	</div>
 
 	<script>
 		function mostrar_perfil() {
