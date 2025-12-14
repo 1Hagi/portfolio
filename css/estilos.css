@@ -193,6 +193,22 @@ header, section {
 
 /* Contenido de sección "Proyectos" */
 
+table {
+	width: 100%;
+	margin: auto;
+	max-width: 1250px;
+	table-layout: fixed;
+}
+
+tbody {
+	max-width: 500px;
+}
+
+td, th {
+  word-break: break-word;
+  overflow-wrap: anywhere;
+}
+
 .sec_proyectos {
 	background-image: linear-gradient(to bottom, rgba(212, 212, 212, 1), rgba(173, 190, 223, 1), rgba(212, 212, 212, 1));
 }
@@ -212,11 +228,12 @@ section{
 
 .proyecto {
 	position: relative;
+
 	background-color: rgba(54, 69, 92, 1);
 	border-top-left-radius: 4%;
 	border-top-right-radius: 4%;
 	box-shadow: 5px 5px 1px rgba(0, 0, 0, 0.3);
-	height: 370px;
+
 }
 
 .proyecto_titulo {
@@ -252,10 +269,10 @@ section{
 	width: 477px;
 	padding: 10px;
 	width: 100%;
-	height: 78px;
 	color:white;
 	text-align: justify;
 	background-color: rgb(82, 100, 146);
+	min-height: 76px;
 }
 
 td {
@@ -271,10 +288,30 @@ ul	{
 	width: 100px;
 }
 
+.tags {
+	width: 100%;
+	overflow: hidden;
+}
+
 .tag {
-	padding: 5px;
+	display: flex;
+	align-items: center;
 	background-color: rgb(134, 143, 182);
 	white-space: nowrap;
+}
+
+.tag-icon {
+	width: 28px;
+	filter: drop-shadow(0 0 1px rgba(255, 255, 255, 0.925));
+}
+
+.tag-name {
+	display: block;
+	padding: 4px;
+}
+
+.tag:hover {
+	cursor: default;	
 }
 
 /* Contenido de "Formación" */
@@ -408,6 +445,10 @@ section {
 	display: block;
 	width: 100%;
 	padding: 0px 0px 30px 0px;
+}
+
+.proyecto {
+	max-width: 500px;
 }
 
 td {
@@ -597,4 +638,58 @@ td {
 .btn-style510:hover::before, .btn-style510:hover::after {
 	transform: translateX(300px) skewX(-15deg);
 	transition: all 0.9s ease;
+}
+
+/* Estilo de scroller infinito */
+
+.scroller {
+	width: 100%;
+	overflow: hidden;   /* CLAVE */
+	position: relative; /* AISLA EL CONTENIDO */
+}
+
+.scroller__inner {
+	display: flex;
+	flex: 0 0 auto;
+	width: max-content;
+}
+
+.scroller[data-animated="true"] {
+	overflow: hidden;
+	-webkit-mask: linear-gradient(
+		90deg,
+		transparent,
+		white 10%,
+		white 80%,
+		transparent
+	);
+	mask: linear-gradient(90deg, transparent, white 8%, white 92%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 30s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 30s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
 }
