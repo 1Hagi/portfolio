@@ -6,9 +6,11 @@
 	<title lang="es">Portafólio</title>
 	<link rel="shortcut icon" href="./img/icons/portafolio.png" />
 	<link rel="stylesheet" type="text/css" href="css/terceros/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/terceros/aos.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+	<script defer src="js/aos.js"></script>
 </head>
 <body>
 
@@ -28,14 +30,14 @@
 
 	<aside class="perfil_lateral">
 
-		<div class="perfil__primero">
+		<div class="perfil__primero" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="100">
 			<figure class="perfil__recuadro">
 				<img class="perfil__foto" src="img/foto_perfil.jpg" alt="imagen_perfil">
 			</figure>
 			<figcaption>C<u>abrera, Diego Nicolá</u>s<figcaption>
 		</div>
 
-		<p class="perfil__descripcion">
+		<p class="perfil__descripcion" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="400">
 			Soy desarrollador web Full-Stack. 
 			<br/><br/>
 			Tengo experiencia en proyectos individuales y en equipo, aplicando buenas prácticas, control de versiones y metodologías ágiles.
@@ -47,7 +49,7 @@
 			Otras: Git/GitHub, Trello y Figma.
 		</p>
 
-		<div class="perfil__contacto">
+		<div class="perfil__contacto" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="600">
 			<p style="width: 100%; align-items: center; text-align: center; font-weight: bold;">Mis Redes</p>
 			<br>
 
@@ -104,7 +106,7 @@
 
 	<section class="cv_section">
 		
-		<article class="cursos_space">
+		<article class="cursos_space" data-aos="fade-zoom-in" data-aos-duration="800">
             <h2 class="titulo__curriculum"> Descargar Curriculum Vitae </h2>
             <br/>
 			<div style="width:100%; text-align:center;">
@@ -119,6 +121,16 @@
 	</section>
 
 	<script>
+
+		document.addEventListener('DOMContentLoaded', () => {
+			AOS.init({
+				duration: 800,
+				easing: 'ease-out',
+				once: true,
+				offset: 80
+			});
+		});
+
 		function mostrar_perfil() {
 			var perfil = document.querySelector('.perfil_lateral');
 			if (perfil.style.display === 'block' ? perfil.style.display = 'none' : perfil.style.display = 'block');

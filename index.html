@@ -7,11 +7,13 @@
 	<title>Portafólio</title>
 	<link rel="shortcut icon" href="./img/icons/portafolio.png" />
 	<link rel="stylesheet" type="text/css" href="css/terceros/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/terceros/aos.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 	<script defer src="js/scroll-infinito.js"></script>
+	<script defer src="js/aos.js"></script>
 </head>
 
 
@@ -33,14 +35,14 @@
 
 	<aside class="perfil_lateral">
 
-		<div class="perfil__primero">
+		<div class="perfil__primero" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="100">
 			<figure class="perfil__recuadro">
 				<img class="perfil__foto" src="img/foto_perfil.jpg" alt="imagen_perfil">
 			</figure>
 			<figcaption>C<u>abrera, Diego Nicolá</u>s<figcaption>
 		</div>
 
-		<p class="perfil__descripcion">
+		<p class="perfil__descripcion" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="400">
 				Soy desarrollador web Full-Stack. 
 				<br/><br/>
 				Tengo experiencia en proyectos individuales y en equipo, aplicando buenas prácticas, control de versiones y metodologías ágiles.
@@ -52,7 +54,7 @@
 				Otras: Git/GitHub, Trello y Figma.
 		</p>
 		
-		<div class="perfil__contacto">
+		<div class="perfil__contacto" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="600">
 			<p style="width: 100%; align-items: center; text-align: center; font-weight: bold;">Mis Redes</p>
 			<br>
 
@@ -116,7 +118,7 @@
 				<tr>
 
 					<td class="contenedor_proyecto">
-						<article class="proyecto">
+						<article class="proyecto" data-aos="fade-zoom-in" data-aos-duration="800">
 							<a href="https://1hagi.github.io/correlativas_lsi/" target="_blank">
 								<p class="proyecto_titulo">Correlativas LSI</p>
 								<img class="proyecto_imagen" src="./img/projects/correlativas_lsi.jpg" alt="">
@@ -147,7 +149,7 @@
 					</td>
 
 					<td class="contenedor_proyecto">
-						<article class="proyecto">
+						<article class="proyecto"  data-aos="fade-zoom-in" data-aos-duration="800">
 							<a href="https://1hagi.github.io/Human-Front-Aid/" target="_blank">
 								<p class="proyecto_titulo">Human Front Aid</p>
 								<img class="proyecto_imagen" src="img/projects/hfaid.jpg" alt="">
@@ -195,7 +197,7 @@
 				<tr>
 
 					<td class="contenedor_proyecto">
-						<article class="proyecto">
+						<article class="proyecto" class="proyecto"  data-aos="fade-zoom-in" data-aos-duration="800">
 							<a href="http://www.caballosenlibertad.org/" target="_blank">
 								<p class="proyecto_titulo">Caballos en Libertad</p>
 								<img class="proyecto_imagen" src="./img/projects/caballos-en-libertad.jpg" alt="">
@@ -234,7 +236,7 @@
 					</td>
 
 					<td class="contenedor_proyecto">
-						<article class="proyecto">
+						<article class="proyecto" class="proyecto"  data-aos="fade-zoom-in" data-aos-duration="800">
 							<a href="https://github.com/Lauty4563/proyecto_actis_cabrera" target="_blank">
 								<p class="proyecto_titulo">Corrientes Sport</p>
 								<img class="proyecto_imagen" src="img/projects/sport-corrientes.jpg" alt="">
@@ -286,7 +288,7 @@
 				<tr>
 
 					<td class="contenedor_proyecto">
-						<article class="proyecto">
+						<article class="proyecto" data-aos="fade-zoom-in" data-aos-duration="800">
 
 							<a href="https://github.com/1Hagi/TurismoTM-WebApp" target="_blank">
 								<p class="proyecto_titulo">Turismo - Tierra Media</p>
@@ -346,7 +348,7 @@
 						</article>
 					</td>
 
-					<td class="contenedor_proyecto">
+					<td class="contenedor_proyecto" data-aos="fade-zoom-in" data-aos-duration="800">
 						<article class="proyecto">
 							<a href="https://github.com/1Hagi/TurismoSimpson-WebApp" target="_blank">
 								<p class="proyecto_titulo">Turismo Simpson WebApp</p>
@@ -410,7 +412,7 @@
 
 				<tr>
 
-					<td class="contenedor_proyecto">
+					<td class="contenedor_proyecto" data-aos="fade-zoom-in" data-aos-duration="800">
 						<article class="proyecto">
 							<a href="https://github.com/1Hagi/TSimpson-SQLite" target="_blank">
 								<p class="proyecto_titulo">TSimpson - SQLite</p>
@@ -448,7 +450,7 @@
 						</article>
 					</td>
 
-					<td class="contenedor_proyecto">
+					<td class="contenedor_proyecto" data-aos="fade-zoom-in" data-aos-duration="800">
 						<article class="proyecto">
 							<a href="https://github.com/1Hagi/TSimpson-JAVA" target="_blank">
 								<p class="proyecto_titulo">TSimpson - JAVA</p>
@@ -478,7 +480,7 @@
 
 				<tr>
 
-					<td class="contenedor_proyecto">
+					<td class="contenedor_proyecto" data-aos="fade-zoom-in" data-aos-duration="800">
 						<article class="proyecto">
 							<a href="https://github.com/1Hagi/programas-en-c" target="_blank">
 								<p class="proyecto_titulo">Programas en C++</p>
@@ -504,6 +506,16 @@
 	</div>
 
 	<script>
+
+		document.addEventListener('DOMContentLoaded', () => {
+			AOS.init({
+				duration: 800,
+				easing: 'ease-out',
+				once: true,
+				offset: 80
+			});
+		});
+
 		function mostrar_perfil() {
 			var perfil = document.querySelector('.perfil_lateral');
 			if (perfil.style.display === 'block' ? perfil.style.display = 'none' : perfil.style.display = 'block');
