@@ -106,7 +106,7 @@ figcaption {
 }
 
 .perfil__contacto {
-	padding: 20px;
+	padding: 10px;
 	text-align: justify;
 	position: fixed ;
 	color: rgb(236, 236, 234);
@@ -116,6 +116,11 @@ figcaption {
 }
 
 .link_redes {
+	display: flex;
+	position: relative;
+	align-items: center;
+	text-align: center;
+	width: 100%;
 	padding: 3px;
 	box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
 }
@@ -127,8 +132,21 @@ figcaption {
 }
 
 .link_redes:hover {
-	background-color: rgb(236, 236, 234);
-	color: rgb(82, 100, 146);
+	background-color: rgb(211, 211, 211);
+	color: rgb(63, 82, 128);
+	filter: brightness(1.2);
+	font-weight: 600;
+}
+
+.link_redes_img {
+	position: absolute;
+	width: 40px;
+	left: -7px;
+	filter: drop-shadow(0 0 1px rgba(133, 133, 133, 0.925));
+}
+
+.card:hover img {
+  filter: saturate(1.5);
 }
 
 /* Contenido del Portafólio*/
