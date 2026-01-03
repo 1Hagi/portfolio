@@ -14,42 +14,48 @@
 </head>
 <body>
 
+	<!--	Fondo de Estrellas	-->
+		
+	<div id="bg-stars">
+		<div id='stars'></div>
+		<div id='stars2'></div>
+		<div id='stars3'></div>
+	</div>
+
 	<!--	Título	-->
 
 	<header>
-		<div id="bg-stars">
-            <div id='stars'></div>
-            <div id='stars2'></div>
-            <div id='stars3'></div>
-        </div>
 		<p class="boton_perfil" onclick="mostrar_perfil()">☰</p>
 		<p>Portafólio</p>
 	</header>
 
 	<!--	Barra Lateral	-->
 
+	<div class="perfil_linea_bg"></div>
+
 	<aside class="perfil_lateral">
 
-		<div class="perfil__primero" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="100">
+		<div class="perfil__primero margen">
 			<figure class="perfil__recuadro">
 				<img class="perfil__foto" src="img/foto_perfil.jpg" alt="imagen_perfil">
 			</figure>
-			<figcaption>C<u>abrera, Diego Nicolá</u>s<figcaption>
+			<div class="perfil_titulos">
+				<p class="subtitulo1">Diego N. Cabrera</p>
+				<p class="subtitulo2">Full-Stack Developer</p>
+			</div>
 		</div>
 
-		<p class="perfil__descripcion" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="400">
-			Soy desarrollador web Full-Stack. 
-			<br/><br/>
-			Tengo experiencia en proyectos individuales y en equipo, aplicando buenas prácticas, control de versiones y metodologías ágiles.
-			<br/><br/>
-			Mi objetivo es seguir creciendo profesionalmente y aportar valor real en entornos donde pueda aprender y contribuir al desarrollo de soluciones de calidad.
-			<br/><br/>
-			Tecnologías: Java, Spring Boot, React, HTML, CSS, JavaScript, Bootstrap.
-			<br/><br/>
-			Otras: Git/GitHub, Trello y Figma.
+		<p class="perfil__descripcion margen" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="200">
+				Tengo experiencia en proyectos individuales y en equipo, aplicando buenas prácticas, control de versiones y metodologías ágiles.
+				<br/><br/>
+				Mi objetivo es seguir creciendo profesionalmente y aportar valor real en entornos donde pueda aprender y contribuir al desarrollo de soluciones de calidad.
+				<br/><br/>
+				Tecnologías: Java, Spring Boot, React, HTML, CSS, JavaScript, Bootstrap.
+				<br/><br/>
+				Otras: Git/GitHub, Trello y Figma.
 		</p>
-			
-		<div class="perfil__contacto" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="600">
+		
+		<div class="perfil__contacto margen" data-aos="fade-zoom-in" data-aos-duration="1000" data-aos-delay="400">
 			<p style="width: 100%; align-items: center; text-align: center; font-weight: bold;">Mis Redes</p>
 			<br>
 
@@ -106,7 +112,7 @@
 
 	<section>
 
-		<article class="formacion_space glass" data-aos="fade-zoom-in" data-aos-duration="800">
+		<article class="formacion_space glass formacion" data-aos="fade-zoom-in" data-aos-duration="800">
 			<a class="formacion_link" href="https://www.linkedin.com/school/universidad-nacional-del-nordeste/" target="_blank">
 				<br style="clear:both"/>
 				<img class="formacion_imagen" src="img/logos/lic_sistemas.jpg">
@@ -202,7 +208,9 @@
 
 		function mostrar_perfil() {
 			var perfil = document.querySelector('.perfil_lateral');
-			if (perfil.style.display === 'block' ? perfil.style.display = 'none' : perfil.style.display = 'block');
+			if (perfil.style.display === 'flex' ? perfil.style.display = 'none' : perfil.style.display = 'flex');
+			var perfil_linea_bg = document.querySelector('.perfil_linea_bg');
+			if (perfil_linea_bg.style.display === 'flex' ? perfil_linea_bg.style.display = 'none' : perfil_linea_bg.style.display = 'flex');
 			var contenido = document.querySelector('section');
 			if (contenido.style.display === 'none' ? contenido.style.display = 'block' : contenido.style.display = 'none');
 		}
